@@ -181,8 +181,8 @@ ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 
 EMAIL_USE_TLS = True
 EMAIL_HOST='smtp.gmail.com'
-EMAIL_HOST_USER='haranvj1997@gmail.com'
-EMAIL_HOST_PASSWORD='gauriharan'
+EMAIL_HOST_USER='mathematics1997@gmail.com'
+EMAIL_HOST_PASSWORD='hariharan5'
 EMAIL_PORT = 587 
 
 

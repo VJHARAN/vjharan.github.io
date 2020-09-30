@@ -46,8 +46,8 @@ def Profile(request):
     context= {
         'u_form':u_form,
         'p_form':p_form,
-        'user_membership':user_membership,
-        'user_subscription': user_subscription
+        # 'user_membership':user_membership,
+        # 'user_subscription': user_subscription
     }
     return render(request,'profile/profile.html',context)
 
@@ -63,18 +63,18 @@ def Request(request):
         prof_id = prof.id
         Pro.objects.filter(id=prof_id).update(is_teacher=True)
         
-        message = 'Your request for a teacher account has been accepted! Now you can go back to MesoOn and upload courses and lectures, good job!'
+        message = 'Your request for a teacher account has been accepted! Now you can go back to LearnOn and upload courses and lectures, good job!'
         send_mail(
-            'MesoOn, the request was accepted.',
+            'LearnOn, the request was accepted.',
             message,
-            'mesoon@no-reply.com',
+            'LearnOn@no-reply.com',
             [email],
             fail_silently=False,
         )
         send_mail(
-            'MesoOn',
-            'Someone requested a teacher account. Me info: ' + name + ' , ' + email + ' , ' + tel_number + ' , ' + str(prof) + '.',
-            'mesoon@no-reply.com',
+            'LearnOn',
+            'Someone requested a teacher account. With info: ' + name + ' , ' + email + ' , ' + tel_number + ' , ' + str(prof) + '.',
+            'LearnOn@no-reply.com',
             ['redian1marku@gmail.com'],
             fail_silently=False,
         )
