@@ -1,8 +1,8 @@
-from django.apps import AppConfig
+# from django.apps import AppConfig
 
 
-class MembershipsConfig(AppConfig):
-    name = 'memberships'
+# class MembershipsConfig(AppConfig):
+#     name = 'memberships'
 
-    def ready(self):
-        import memberships.signals
+#     def ready(self):
+#         import memberships.signals

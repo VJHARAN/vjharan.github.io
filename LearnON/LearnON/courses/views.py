@@ -2,7 +2,7 @@ import secrets
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView,ListView,DetailView,View
 from courses.models import Subjects,Lesson,Class
-from memberships.models import UserMembership
+#from memberships.models import UserMembership
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin,UserPassesTestMixin
 from django.contrib.auth.decorators import login_required
