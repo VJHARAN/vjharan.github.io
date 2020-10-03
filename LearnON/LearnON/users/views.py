@@ -27,8 +27,6 @@ def Profile(request):
     context= {
         'u_form':u_form,
         'p_form':p_form,
-        # 'user_membership':user_membership,
-        # 'user_subscription': user_subscription
     }
     return render(request,'profile/profile.html',context)
 
