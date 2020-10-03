@@ -1,5 +1,4 @@
 from django.db import models
-#from memberships.models import Membership
 from django.contrib.auth.models import User
 from django.urls import reverse
 
